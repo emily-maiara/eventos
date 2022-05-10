@@ -1,0 +1,17 @@
+html,
+body {
+  background-color: #023160;
+  padding: 0;
+  margin: 0;
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: #023160;
+}
+
+* {
+  box-sizing: border-box;
+}
