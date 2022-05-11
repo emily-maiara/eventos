@@ -17,7 +17,6 @@ function Home() {
         <title>Site Eventos</title>
       </Head>
       <main className={styles.main}>
-        <img src='/favicon.ico' />
         <h1 className={styles.title}>
           Bem Vindo!
         </h1>
@@ -26,7 +25,7 @@ function Home() {
           Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus.
           Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
         </h2>
-        <button type="button" class="btn btn-light btn-lg">Entrar</button>
+        <button type="button" class="btn btn-light btn-">Entrar</button>
          <h2 className={styles.description}>Ainda não possui conta?<Link href="/cadastro"><a>Criar Conta</a></Link></h2>
       </main>
     </div>
