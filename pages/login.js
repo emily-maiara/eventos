@@ -2,9 +2,9 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
-function Home() {
+function Login() {
   return (
-    <div className={styles.container}>
+    <div className={styles.formulario}>
       <Head>
         <meta charSet="utf-8" />
         <meta name="robots" content="index, follow " />
@@ -18,38 +18,35 @@ function Home() {
         <nav class={styles.icon}>
           <div class="row flex-nowrap justify-content-between align-items-center">
             <div class="col-12 text-center">
-              <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="/">
                 <img src='/favicon.ico' width="200" height="60" class="blog-header-logo text-dark" alt="" />
               </a>
             </div>
           </div>
         </nav>
       </Head>
-      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column container">
-        <main className={styles.main} class="px-3">
-          <h1 className={styles.title}>
-            Bem Vindo!
-          </h1>
-          <p className={styles.description} class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.
-            Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus.
-            Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
-          </p>
-          <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-12 text-center">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-light btn-lg"><Link href="/login"><a>Entrar</a></Link></button>
-              </div>
-            </div>
+      <main class={styles.main}>
+        <h1 className={styles.title2}>
+          Login
+        </h1>
+        <form class={styles.formulario}>
+          <div class="">
+            <label for="inputEmail"></label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email"></input>
           </div>
-          <h2 className={styles.description} class="lead">Ainda não possui conta? <Link href="/cadastro"><a>Criar Conta</a></Link></h2>
-        </main>
-      </div >
+          <div class="">
+            <label for="inputPassword"></label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha"></input>
+          </div>
+          <p><Link href="/cadastro"><a>Criar Conta</a></Link></p>
+          <div class="btn-group">
+            <button type="submit" class="buttonCad">Entrar</button>
+          </div>
+        </form>
+      </main>
     </div>
   )
 }
 
-export default Home;
 
-
-
+export default Login;

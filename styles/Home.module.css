@@ -136,7 +136,7 @@
   align-items: center;
 }
 
-.button {
+.buttonCad {
   box-sizing: border-box;
   position: center;
   left: 20%;
@@ -145,4 +145,5 @@
   bottom: 0%;
   background: #023160;
   border: 2px solid #023160;
+  color: white;
   }

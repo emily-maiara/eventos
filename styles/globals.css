@@ -15,7 +15,7 @@ a {
   box-sizing: border-box;
 }
 
-button {
+.buttonCad {
   border: 0;
   width: 100px;
   height: 49px;
@@ -26,6 +26,7 @@ button {
   padding: 1%;
   border-radius: 10px;
   background-color: #023160;
+  color: white;
   
 }
 

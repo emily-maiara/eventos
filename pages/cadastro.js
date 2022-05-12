@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
-
-function Cadastro(){
-return (
+function Cadastro() {
+  return (
     <div className={styles.formulario}>
-        <Head>
+      <Head>
         <meta charSet="utf-8" />
         <meta name="robots" content="index, follow " />
         <meta name="viewport" content="initial-scale=1.0,
@@ -16,40 +16,43 @@ return (
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <title>Site Eventos</title>
         <nav class={styles.icon}>
-      <a class="navbar-brand" href="#">
-      <img src='/favicon.ico' width="200" height="60" class={styles.icon} alt=""/>
-      </a>
-      </nav>
+          <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-12 text-center">
+              <a class="navbar-brand" href="/">
+                  <img src='/favicon.ico' width="200" height="60" class="blog-header-logo text-dark" alt="" />
+              </a>
+            </div>
+          </div>
+        </nav>
       </Head>
       <main class={styles.main}>
-      <h1 className={styles.title2}>
+        <h1 className={styles.title2}>
           Cadastro
-      </h1>
-      <form class={styles.formulario}>
-      <div class="">
-      <label for="inputNome"></label>
-      <input type="nome" class="form-control" id="inputNome" placeholder="Nome"></input>
+        </h1>
+        <form class={styles.formulario}>
+          <div class="">
+            <label for="inputNome"></label>
+            <input type="nome" class="form-control" id="inputNome" placeholder="Nome"></input>
+          </div>
+          <div class="">
+            <label for="inputSobrenome"></label>
+            <input type="sobrenome" class="form-control" id="inputSobrenome" placeholder="Sobrenome"></input>
+          </div>
+          <div class="">
+            <label for="inputEmail"></label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email"></input>
+          </div>
+          <div class="">
+            <label for="inputPassword"></label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha"></input>
+          </div>
+          <div class="btn-group">
+            <button type="submit" class="buttonCad"><Link href="/login"><a>Cadastrar</a></Link></button>
+          </div>
+        </form>
+      </main>
     </div>
-    <div class="">
-      <label for="inputSobrenome"></label>
-      <input type="sobrenome" class="form-control" id="inputSobrenome" placeholder="Sobrenome"></input>
-    </div>
-    <div class="">
-      <label for="inputEmail"></label>
-      <input type="email" class="form-control" id="inputEmail" placeholder="Email" value="emily.maiara124@gmail.com"></input>
-    </div>
-    <div class="">
-      <label for="inputPassword"></label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Senha"></input>
-    </div>
-    <div class="btn-group">
-   <button type="submit" class="">Confirmar identidade</button>
-   <button type="submit" class="">Entrar</button>
-  </div>
-  </form>
-  </main>
-  </div>
-)
+  )
 }
 
 
